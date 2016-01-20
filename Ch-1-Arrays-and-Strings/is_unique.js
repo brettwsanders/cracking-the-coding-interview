@@ -41,8 +41,18 @@ function isUniqueAlt(string) {
   return true;
 }
 
-
+//tests
 console.log(isUnique('abcdefghijklmnopqrstuvwxyz1234567890'), 'should be true');
+console.log(isUniqueAlt('abcdefghijklmnopqrstuvwxyz1234567890'), 'should be true');
+console.log(isUnique('abcdefghijklmnopqrstuvwxyz12345678900'), 'should be false');
+console.log(isUniqueAlt('abcdefghijklmnopqrstuvwxyz12345678900'), 'should be false');
+console.log(isUnique('xyz1234'), 'should be true');
+console.log(isUniqueAlt('xyz1234'), 'should be true');
+console.log(isUnique('xxyz1234'), 'should be false');
+console.log(isUniqueAlt('xxyz1234'), 'should be false');
+console.log(isUnique(''), 'should be true');
+console.log(isUniqueAlt(''), 'should be true');
+
 
 
 
